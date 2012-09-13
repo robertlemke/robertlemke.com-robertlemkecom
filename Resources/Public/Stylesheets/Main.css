@@ -1,0 +1,17 @@
+p {
+	line-height: 24px;
+}
+
+h1.logotype {
+	font-family: "house", sans-serif;
+	font-weight: normal;
+	font-size: 20px;
+}
+.logotype .underscore {
+	color: #E5352C;
+}
+
+.main-navigation ul li {
+	font-size: 20px;
+	line-height: 16px;
+}

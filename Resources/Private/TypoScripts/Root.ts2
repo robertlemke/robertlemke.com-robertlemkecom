@@ -1,0 +1,22 @@
+include: resource://TYPO3.TYPO3/Private/DefaultTypoScript/All.ts2
+
+page = TYPO3.TYPO3:Page
+page.body.templatePath = 'resource://RobertLemke.RobertLemkeCom/Private/Templates/Page/Default.html'
+page.body.sectionName = 'body'
+
+page.body.sections.main = TYPO3.TYPO3:Section
+page.body.sections.main.nodePath = 'main'
+
+page.headerData {
+	stylesheets = TYPO3.TypoScript:FluidRenderer
+	stylesheets {
+		templatePath = 'resource://RobertLemke.RobertLemkeCom/Private/Templates/Page/Default.html'
+		sectionName = 'stylesheets'
+	}
+
+	javascripts = TYPO3.TypoScript:FluidRenderer
+	javascripts {
+		templatePath = 'resource://RobertLemke.RobertLemkeCom/Private/Templates/Page/Default.html'
+		sectionName = 'javascripts'
+	}
+}

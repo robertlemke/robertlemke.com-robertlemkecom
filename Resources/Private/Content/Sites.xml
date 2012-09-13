@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<site nodeName="robertlemkecom">
+		<properties>
+			<name>robertlemke.com</name>
+			<state>1</state>
+			<siteResourcesPackageKey>RobertLemke.RobertLemkeCom</siteResourcesPackageKey>
+		</properties>
+		<node type="TYPO3.TYPO3:Page" nodeName="home" locale="">
+			<properties>
+				<title>Home</title>
+			</properties>
+			<node type="TYPO3.TYPO3:Section" nodeName="main" locale="">
+				<node type="TYPO3.TYPO3:Html" nodeName="html1" locale="">
+					<properties>
+						<source><![CDATA[
+				Hello world
+						]]></source>
+						<title/>
+					</properties>
+				</node>
+			</node>
+		</node>
+	</site>
+</root>
