@@ -1,0 +1,32 @@
+page = Page
+page.body {
+	templatePath = 'resource://RobertLemke.RobertLemkeCom/Private/Templates/Page/Default.html'
+	sectionName = 'body'
+
+	sections {
+		main = Section
+		main.nodePath = 'main'
+	}
+
+	parts {
+		firstLevelMenu = Menu
+		firstLevelMenu {
+			entryLevel = 2
+			maximumLevels = 2
+		}
+	}
+}
+
+page.headerData {
+	stylesheets = Template
+	stylesheets {
+		templatePath = 'resource://RobertLemke.RobertLemkeCom/Private/Templates/Page/Default.html'
+		sectionName = 'stylesheets'
+	}
+
+	javascripts = Template
+	javascripts {
+		templatePath = 'resource://RobertLemke.RobertLemkeCom/Private/Templates/Page/Default.html'
+		sectionName = 'javascripts'
+	}
+}

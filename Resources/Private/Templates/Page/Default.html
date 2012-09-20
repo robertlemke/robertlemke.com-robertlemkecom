@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+{namespace typo3=TYPO3\TYPO3\ViewHelpers}
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
 <!--[if lt IE 7]>
 <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>
@@ -24,57 +26,59 @@
 			<![endif]-->
 		</f:section>
 	</head>
-<body>
+	<body>
+		<f:section name="body">
+			<div class="row">
+				<header class="four columns main-navigation t3-reloadable-content">
+					<h1 class="logotype">robert lemke<span class="underscore">_</span></h1>
+					<ts:renderTypoScript path="parts/firstLevelMenu">
+						<ul class="side-nav">
+							<li><a href="#">developer</a></li>
+							<li><a href="#">coach</a></li>
+							<li><a href="#">speaker</a></li>
+							<li><a href="#">blog</a></li>
+							<li><a href="#">about</a></li>
+							<li><a href="#">contact</a></li>
+						</ul>
+					</ts:renderTypoScript>
+				</header>
+				<section class="eight columns t3-reloadable-content">
+					<ts:renderTypoScript path="sections/main">
+						<h4>FLOW3 at Campus Party Europe</h4>
+						<p>This week I'll be joining the 10.000 people for an amazing technology
+							festival at the former Tempelhof Airport: Campus Party Europe. I have
+							been invited to give a talk about PHP and FLOW3 and I'm pretty
+							excited to speak at such an unusual event.</p>
 
-<f:section name="body">
-	<div class="t3-reloadable-content">
-		<div class="row">
-			<div class="four columns main-navigation">
-				<h1 class="logotype">robert lemke<span class="underscore">_</span></h1>
-				<ul class="side-nav">
-					<li><a href="#">developer</a></li>
-					<li><a href="#">coach</a></li>
-					<li><a href="#">speaker</a></li>
-					<li><a href="#">blog</a></li>
-					<li><a href="#">about</a></li>
-					<li><a href="#">contact</a></li>
-				</ul>
+						<p>If you're living in Berlin, you probably already stumbled over the
+							bill and facades promotion of the event - and if not, it's worth
+							spending a minute watching this short video:</p>
+
+						<p>Karsten Dambekalns and Ben van't Ende will join me in Berlin and you
+							can bet that I'll catch the atmosphere of the event with my camera
+							and post some videos in the course of this week.</p>
+					</ts:renderTypoScript>
+				</section>
 			</div>
-			<div class="eight columns">
-				<h4>FLOW3 at Campus Party Europe</h4>
-				<p>This week I'll be joining the 10.000 people for an amazing technology
-					festival at the former Tempelhof Airport: Campus Party Europe. I have
-					been invited to give a talk about PHP and FLOW3 and I'm pretty
-					excited to speak at such an unusual event.</p>
 
-				<p>If you're living in Berlin, you probably already stumbled over the
-					bill and facades promotion of the event - and if not, it's worth
-					spending a minute watching this short video:</p>
+			<!-- Included JS Files (Uncompressed) -->
+			<script src="../../../Public/Javascripts/foundation/jquery.js"></script>
+			<script src="../../../Public/Javascripts/foundation/jquery.foundation.accordion.js"></script>
+			<script src="../../../Public/Javascripts/foundation/jquery.foundation.alerts.js"></script>
+			<script src="../../../Public/Javascripts/foundation/jquery.foundation.buttons.js"></script>
+			<script src="../../../Public/Javascripts/foundation/jquery.foundation.forms.js"></script>
+			<script src="../../../Public/Javascripts/foundation/jquery.foundation.mediaQueryToggle.js"></script>
+			<script src="../../../Public/Javascripts/foundation/jquery.foundation.navigation.js"></script>
+			<script src="../../../Public/Javascripts/foundation/jquery.foundation.orbit.js"></script>
+			<script src="../../../Public/Javascripts/foundation/jquery.foundation.reveal.js"></script>
+			<script src="../../../Public/Javascripts/foundation/jquery.foundation.tabs.js"></script>
+			<script src="../../../Public/Javascripts/foundation/jquery.foundation.tooltips.js"></script>
+			<script src="../../../Public/Javascripts/foundation/jquery.placeholder.js"></script>
 
-				<p>Karsten Dambekalns and Ben van't Ende will join me in Berlin and you
-					can bet that I'll catch the atmosphere of the event with my camera
-					and post some videos in the course of this week.</p>
-			</div>
-		</div>
+			<!-- Application Javascript, safe to override -->
+			<script src="../../../Public/Javascripts/foundation/app.js"></script>
 
-		<!-- Included JS Files (Uncompressed) -->
-		<script src="../../../Public/Javascripts/foundation/jquery.js"></script>
-		<script src="../../../Public/Javascripts/foundation/jquery.foundation.accordion.js"></script>
-		<script src="../../../Public/Javascripts/foundation/jquery.foundation.alerts.js"></script>
-		<script src="../../../Public/Javascripts/foundation/jquery.foundation.buttons.js"></script>
-		<script src="../../../Public/Javascripts/foundation/jquery.foundation.forms.js"></script>
-		<script src="../../../Public/Javascripts/foundation/jquery.foundation.mediaQueryToggle.js"></script>
-		<script src="../../../Public/Javascripts/foundation/jquery.foundation.navigation.js"></script>
-		<script src="../../../Public/Javascripts/foundation/jquery.foundation.orbit.js"></script>
-		<script src="../../../Public/Javascripts/foundation/jquery.foundation.reveal.js"></script>
-		<script src="../../../Public/Javascripts/foundation/jquery.foundation.tabs.js"></script>
-		<script src="../../../Public/Javascripts/foundation/jquery.foundation.tooltips.js"></script>
-		<script src="../../../Public/Javascripts/foundation/jquery.placeholder.js"></script>
-
-	</div>
-</f:section>
-<!-- Application Javascript, safe to override -->
-<script src="../../../Public/Javascripts/foundation/app.js"></script>
-</body>
+		</f:section>
+	</body>
 
 </html>
