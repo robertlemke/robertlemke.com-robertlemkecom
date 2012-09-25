@@ -6,17 +6,15 @@
 			<state>1</state>
 			<siteResourcesPackageKey>RobertLemke.RobertLemkeCom</siteResourcesPackageKey>
 		</properties>
-		<node type="TYPO3.TYPO3:Page" nodeName="home" locale="">
+		<node type="TYPO3.Phoenix.ContentTypes:Page" nodeName="home" locale="">
 			<properties>
 				<title>Home</title>
 			</properties>
-			<node type="TYPO3.TYPO3:Section" nodeName="main" locale="">
-				<node type="TYPO3.TYPO3:Html" nodeName="html1" locale="">
+			<node type="TYPO3.Phoenix.ContentTypes:Section" nodeName="main" locale="">
+				<node type="TYPO3.Phoenix.ContentTypes:Text" nodeName="text1" locale="">
 					<properties>
-						<source><![CDATA[
-				Hello world
-						]]></source>
-						<title/>
+						<text>Hello World!
+						</text>
 					</properties>
 				</node>
 			</node>
