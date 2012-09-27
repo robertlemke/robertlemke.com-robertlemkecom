@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-{namespace typo3=TYPO3\TYPO3\ViewHelpers}
-{namespace ts=TYPO3\TypoScript\ViewHelpers}
+<!--{namespace typo3=TYPO3\TYPO3\ViewHelpers}{namespace ts=TYPO3\TypoScript\ViewHelpers}-->
 <!--[if lt IE 7]>
 <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>
@@ -24,40 +23,29 @@
 			<!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 			<![endif]-->
-
-			<script src="../../../Public/Javascripts/foundation/jquery.js"></script>
-			<script src="../../../Public/Javascripts/foundation/jquery.foundation.accordion.js"></script>
-			<script src="../../../Public/Javascripts/foundation/jquery.foundation.alerts.js"></script>
-			<script src="../../../Public/Javascripts/foundation/jquery.foundation.buttons.js"></script>
-			<script src="../../../Public/Javascripts/foundation/jquery.foundation.forms.js"></script>
-			<script src="../../../Public/Javascripts/foundation/jquery.foundation.mediaQueryToggle.js"></script>
-			<script src="../../../Public/Javascripts/foundation/jquery.foundation.navigation.js"></script>
-			<script src="../../../Public/Javascripts/foundation/jquery.foundation.orbit.js"></script>
-			<script src="../../../Public/Javascripts/foundation/jquery.foundation.reveal.js"></script>
-			<script src="../../../Public/Javascripts/foundation/jquery.foundation.tabs.js"></script>
-			<script src="../../../Public/Javascripts/foundation/jquery.foundation.tooltips.js"></script>
-			<script src="../../../Public/Javascripts/foundation/jquery.placeholder.js"></script>
-
-			<script src="../../../Public/Javascripts/foundation/app.js"></script>
 		</f:section>
 	</head>
 	<body>
 		<f:section name="body">
+			<div class="row hide-for-small" id="whitespace-top"></div>
 			<div class="row">
-				<header class="four columns main-navigation t3-reloadable-content" id="mainnavigation">
-					<h1 class="logotype">robert lemke<span class="underscore">_</span></h1>
-					<ts:renderTypoScript path="parts/firstLevelMenu">
-						<ul class="side-nav">
-							<li><a href="#">developer</a></li>
-							<li><a href="#">coach</a></li>
-							<li><a href="#">speaker</a></li>
-							<li><a href="#">blog</a></li>
-							<li><a href="#">about</a></li>
-							<li><a href="#">contact</a></li>
-						</ul>
-					</ts:renderTypoScript>
+				<header class="three columns main-navigation t3-reloadable-content" id="navigation-main">
+					<nav class="show-for-small" id="navigation-main-small">
+						<a href="/" class="logotype"><h1>robert lemke<span class="underscore">_</span></h1></a><br/>
+						<a href="coach">coach</a></li>
+						<a href="blog/posts/">blog</a></li>
+						<a href="about">about</a></li>
+						<a href="contact">contact</a></li>
+					</nav>
+					<nav class="hide-for-small" id="navigation-main-full">
+						<a href="/" class="logotype"><h1>robert lemke<span class="underscore">_</span></h1></a>
+						<a href="coach">coach</a></li>
+						<a href="blog/posts/">blog</a></li>
+						<a href="about">about</a></li>
+						<a href="contact">contact</a></li>
+					</nav>
 				</header>
-				<section class="eight columns t3-reloadable-content" id="mainsection">
+				<section class="seven columns t3-reloadable-content" id="mainsection">
 					<ts:renderTypoScript path="sections/main">
 						<h4>FLOW3 at Campus Party Europe</h4>
 						<p>This week I'll be joining the 10.000 people for an amazing technology
@@ -74,8 +62,24 @@
 							and post some videos in the course of this week.</p>
 					</ts:renderTypoScript>
 				</section>
+				<div class="one column hide-for-small"></div>
 			</div>
+
+			<script src="../../../Public/Javascripts/foundation/jquery.js"></script>
+			<script src="../../../Public/Javascripts/foundation/jquery.foundation.accordion.js"></script>
+			<script src="../../../Public/Javascripts/foundation/jquery.foundation.alerts.js"></script>
+			<script src="../../../Public/Javascripts/foundation/jquery.foundation.buttons.js"></script>
+			<script src="../../../Public/Javascripts/foundation/jquery.foundation.forms.js"></script>
+			<script src="../../../Public/Javascripts/foundation/jquery.foundation.mediaQueryToggle.js"></script>
+			<script src="../../../Public/Javascripts/foundation/jquery.foundation.navigation.js"></script>
+			<script src="../../../Public/Javascripts/foundation/jquery.foundation.orbit.js"></script>
+			<script src="../../../Public/Javascripts/foundation/jquery.foundation.reveal.js"></script>
+			<script src="../../../Public/Javascripts/foundation/jquery.foundation.tabs.js"></script>
+			<script src="../../../Public/Javascripts/foundation/jquery.foundation.tooltips.js"></script>
+			<script src="../../../Public/Javascripts/foundation/jquery.placeholder.js"></script>
+
+			<!-- Application Javascript, safe to override -->
+			<script src="../../../Public/Javascripts/foundation/app.js"></script>
 		</f:section>
 	</body>
-
 </html>

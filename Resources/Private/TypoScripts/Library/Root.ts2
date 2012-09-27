@@ -1,3 +1,5 @@
+include: resource://RobertLemke.Plugin.Blog/Private/TypoScripts/Library/PostsPlugin.ts2
+
 page = Page
 page.body {
 	templatePath = 'resource://RobertLemke.RobertLemkeCom/Private/Templates/Page/Default.html'

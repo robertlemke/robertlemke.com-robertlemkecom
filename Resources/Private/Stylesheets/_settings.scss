@@ -11,11 +11,11 @@
 
 // Colors Settings
 
-$mainColor: #222;
+$mainColor: #E5352C;
 $secondaryColor: #e9e9e9;
 $alertColor: #c60f13;
 $successColor: #5da423;
-$txtColor: #222;
+$txtColor: #222222;
 $highlightColor: #E5352C;
 
 // $black: #000;
@@ -26,11 +26,17 @@ $highlightColor: #E5352C;
 // Typography Settings
 
 $headerFontFamily: "House", Helvetica, Arial, sans-serif;
-$headerFontWeight: normal;
+$headerFontWeight: bold;
+
 // $headerFontColor: #222;
-$bodyFontFamily: "House", serif;
-$bodyFontWeight: normal;
-$bodyFontColor: #222;
+$bodyFontFamily: 'Droid Serif', Georgia, serif;
+$bodyFontWeight: 400;
+//$bodyFontColor: #222;
+
+// Modular Scale
+// $ratio: $golden;
+$baseFontSize: 18px;
+$importantModNum: 16px;
 
 // Button Settings
 
@@ -53,11 +59,6 @@ $bodyFontColor: #222;
 
 // $navBarHeight: 40px;
 // $navFlyoutBaseWidth: 250px;
-
-// Modular Scale
-// $ratio: $golden;
-$baseFontSize: 16px;
-$importantModNum: 16px;
 
 // Tooltip Settings
 // $hasTipBorderBottom: dotted 1px #ccc;

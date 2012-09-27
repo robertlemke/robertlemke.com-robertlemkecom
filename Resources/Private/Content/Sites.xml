@@ -13,11 +13,15 @@
 			<node type="TYPO3.Phoenix.ContentTypes:Section" nodeName="main" locale="">
 				<node type="TYPO3.Phoenix.ContentTypes:Text" nodeName="text1" locale="">
 					<properties>
-						<text>Hello World!
-						</text>
+						<text>Hello World!</text>
 					</properties>
 				</node>
 			</node>
+		</node>
+		<node type="TYPO3.Phoenix.ContentTypes:Page" nodeName="blog" locale="">
+			<properties>
+				<title>Blog</title>
+			</properties>
 		</node>
 	</site>
 </root>

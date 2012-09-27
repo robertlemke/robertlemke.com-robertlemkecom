@@ -1,0 +1,101 @@
+@import "settings";
+@import "foundation";
+
+$red: #E5352C;
+
+body {
+	border-top: 2px solid $red;
+	padding-bottom: 60px;
+}
+
+#whitespace-top {
+	padding-bottom: 60px;
+}
+
+.invisible-link, .invisible-link:hover, h1 a, h1 a:hover, h2 a, h2 a:hover, h3 a, h3 a:hover {
+	color: $txtColor;
+}
+
+p {
+	line-height: 24px;
+}
+
+h1 {
+	@include font-size(28);
+	font-weight: normal;
+	margin-top: 0;
+}
+
+h2 {
+	@include font-size(28);
+	font-weight: normal;
+	margin-top: 0;
+}
+
+h3 {
+	@include font-size(24);
+	font-weight: normal;
+	margin-top: 0;
+}
+
+#navigation-main {
+	font-family: "house", sans-serif;
+
+	nav a {
+		color: $txtColor;
+	}
+
+	nav a:hover, nav a.active {
+		color: $red;
+	}
+
+	h1 {
+		font-weight: normal;
+	}
+	.underscore {
+		color: $red;
+	}
+}
+
+#navigation-main-full {
+	a {
+		display:	block;
+		@include font-size(28);
+
+		h1 {
+			margin-bottom: 0;
+		}
+	}
+}
+
+#navigation-main-small {
+	padding: 20px 0 30px 0;
+
+	a {
+		display:	inline;
+		@include font-size(18);
+		margin: 0 5px 0 0;
+
+		h1 {
+			display:	inline;
+			@include font-size(24);
+			margin: 0;
+		}
+	}
+}
+
+.robertlemke-plugin-blog {
+	.read-more {
+		color: $red;
+		font-weight: bold;
+	}
+
+	.typo3-widget-paginator {
+		li a {
+			color: $txtColor;
+		}
+		li.current, li a:hover{
+			color: $red;
+		}
+	}
+}
