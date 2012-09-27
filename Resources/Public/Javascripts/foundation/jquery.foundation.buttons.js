@@ -1,36 +1,30 @@
-;(function ($, window, undefined) {
-  'use strict';
+(function ($) {
 
   $.fn.foundationButtons = function(options) {
-    var $doc = $(document);
     // Prevent event propagation on disabled buttons
-    $doc.on('click.fndtn', '.button.disabled', function (e) {
+    $(document).on('click.fndtn', '.button.disabled', function (e) {
       e.preventDefault();
     });
 
     $('.button.dropdown > ul', this).addClass('no-hover');
 
-    $doc.on('click.fndtn', '.button.dropdown, .button.dropdown.split span', function (e) {
+    $(document).on('click.fndtn', '.button.dropdown, .button.dropdown.split span', function (e) {
       // Stops further propagation of the event up the DOM tree when clicked on the button.
       // Events fired by its descendants are not being blocked.
-      $('.button.dropdown').children('ul').removeClass('show-dropdown');
       if (e.target === this) {
         e.stopPropagation();
       }
     });
-
-    $doc.on('click.fndtn', '.button.dropdown.split span', function (e) {
+    $(document).on('click.fndtn', '.button.dropdown.split span', function (e) {
       e.preventDefault();
       $('.button.dropdown', this).not($(this).parent()).children('ul').removeClass('show-dropdown');
       $(this).siblings('ul').toggleClass('show-dropdown');
     });
-
-    $doc.on('click.fndtn', '.button.dropdown:not(.split)', function (e) {
+    $(document).on('click.fndtn', '.button.dropdown:not(.split)', function (e) {
       $('.button.dropdown', this).not(this).children('ul').removeClass('show-dropdown');
       $(this).children('ul').toggleClass('show-dropdown');
     });
-
-    $doc.on('click.fndtn', 'body, html', function () {
+    $(document).on('click.fndtn', 'body, html', function () {
       $('.button.dropdown ul').removeClass('show-dropdown');
     });
 
@@ -52,4 +46,4 @@
 
   };
 
-})( jQuery, this );
+})( jQuery );

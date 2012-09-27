@@ -369,8 +369,6 @@
     if (false === $input.is(':disabled')) {
         input.checked = ((input.checked) ? false : true);
         $element.toggleClass('checked');
-
-        $input.trigger('change');
     }
   };
 
@@ -379,14 +377,11 @@
         input = $input[0];
 
     if (false === $input.is(':disabled')) {
-
-      $('input:radio[name="' + $input.attr('name') + '"]').next().not($element).removeClass('checked');
-      if ($element.hasClass('checked')) {
-        // Do Nothing
-      } else {
-        $element.toggleClass('checked');
-      }
-      input.checked = $element.hasClass('checked');
+      $('input:radio[name="' + $input.attr('name') + '"]').each(function () {
+        $(this).next().removeClass('checked');
+      });
+      input.checked = ((input.checked) ? false : true);
+      $element.toggleClass('checked');
 
       $input.trigger('change');
     }
