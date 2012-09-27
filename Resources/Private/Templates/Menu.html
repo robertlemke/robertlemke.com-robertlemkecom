@@ -1,0 +1,19 @@
+{namespace typo3=TYPO3\TYPO3\ViewHelpers}
+{namespace rl=RobertLemke\RobertLemkeCom\ViewHelpers}
+<f:render section="itemList" arguments="{items: items}" />
+
+<f:section name="itemList">
+	<f:for each="{items}" as="item" iteration="iterator">
+		<f:if condition="{iterator.isFirst}">
+			<f:then>
+				<typo3:link.node node="{item.node}" class="logotype"><h1>robert lemke<span class="underscore">_</span></h1></typo3:link.node>
+			</f:then>
+			<f:else>
+				<f:if condition="{item.label} == 'Blog'">
+					<f:then><a href="blog/posts/">blog</a></f:then>
+					<f:else><typo3:link.node node="{item.node}" class="{item.state}"><rl:format.case case="lower">{item.label}</rl:format.case></typo3:link.node></f:else>
+				</f:if>
+			</f:else>
+		</f:if>
+	</f:for>
+</f:section>
