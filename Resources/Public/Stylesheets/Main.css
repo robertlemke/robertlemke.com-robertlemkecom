@@ -5079,3 +5079,12 @@ h3 {
 .robertlemke-plugin-blog .typo3-widget-paginator li.current, .robertlemke-plugin-blog .typo3-widget-paginator li a:hover {
   color: #e5352c;
 }
+
+/* line 104, ../../Private/Stylesheets/Main.scss */
+.typo3-image.typo3-image-position-left {
+  float: left;
+}
+/* line 107, ../../Private/Stylesheets/Main.scss */
+.typo3-image.typo3-image-position-right {
+  float: right;
+}
