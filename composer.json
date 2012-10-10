@@ -13,7 +13,8 @@
     ],
 
     "require": {
-        "typo3/phoenix": "*"
+        "typo3/phoenix": "*",
+		"robertlemke/plugin-blog": "*"
     },
     "autoload": {
         "psr-0": {
