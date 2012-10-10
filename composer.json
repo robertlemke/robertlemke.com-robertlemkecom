@@ -1,6 +1,6 @@
 {
     "name": "robertlemke/robertlemkecom",
-    "type": "typo3-flow-site",
+    "type": "typo3-flow-package",
     "description": "Neos Site package for robertlemke.com",
     "homepage": "http://robertlemke.com",
     "keywords": ["site"],
