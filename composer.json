@@ -1,14 +1,15 @@
 {
-    "name": "robertlemke/robertlemkecom",
-    "type": "typo3-flow-site",
-    "description": "",
-    "version": "1.0.0",
-    "require": {
-        "typo3/flow": "*"
-    },
-    "autoload": {
-        "psr-0": {
-            "RobertLemke\\RobertLemkeCom": "Classes"
-        }
-    }
+	"name":"robertlemke/robertlemkecom",
+	"type":"typo3-flow-site",
+	"description":"",
+	"version":"1.0.0",
+	"require":{
+		"typo3/phoenix":"*",
+		"robertlemke/plugin-blog":"*"
+	},
+	"autoload":{
+		"psr-0":{
+			"RobertLemke\\RobertLemkeCom":"Classes"
+		}
+	}
 }
