@@ -1,6 +1,6 @@
 {
     "name": "robertlemke/robertlemkecom",
-    "type": "typo3-flow-package",
+    "type": "typo3-flow-site",
     "description": "",
     "version": "1.0.0",
     "require": {
