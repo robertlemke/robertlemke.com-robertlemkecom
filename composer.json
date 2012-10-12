@@ -1,20 +1,10 @@
 {
     "name": "robertlemke/robertlemkecom",
     "type": "typo3-flow-package",
-    "description": "Neos Site package for robertlemke.com",
-    "homepage": "http://robertlemke.com",
-    "keywords": ["site"],
-    "authors": [
-        {
-            "name": "Robert Lemke",
-			"email": "rl@robertlemke.com",
-            "homepage": "http://robertlemke.com"
-        }
-    ],
-
+    "description": "",
+    "version": "1.0.0",
     "require": {
-        "typo3/phoenix": "*",
-		"robertlemke/plugin-blog": "*"
+        "typo3/flow": "*"
     },
     "autoload": {
         "psr-0": {
