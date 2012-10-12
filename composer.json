@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-0": {
-            "TYPO3\\Flow": "Classes"
+            "RobertLemke\\RobertLemkeCom": "Classes"
         }
     }
 }
