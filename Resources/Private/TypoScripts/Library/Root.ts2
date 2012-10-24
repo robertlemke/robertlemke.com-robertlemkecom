@@ -14,7 +14,7 @@ page.body {
 		firstLevelMenu = Menu
 		firstLevelMenu {
 			templatePath = 'resource://RobertLemke.RobertLemkeCom/Private/Templates/Menu.html'
-			entryLevel = 1
+			entryLevel = 2
 			maximumLevels = 1
 		}
 	}
