@@ -3325,7 +3325,7 @@ div.orbit-wrapper span.rotator {
   position: absolute;
   top: 0;
   left: -20px;
-  background: url('/Public/Images/foundation/orbit/rotator-black.png?1348685020') no-repeat;
+  background: url('/Public/Images/foundation/orbit/rotator-black.png?1351086102') no-repeat;
   z-index: 3;
 }
 
@@ -3350,7 +3350,7 @@ div.orbit-wrapper span.rotator.move {
 div.orbit-wrapper span.mask.move {
   width: 40px;
   left: 0;
-  background: url('/Public/Images/foundation/orbit/timer-black.png?1348685020') repeat 0 0;
+  background: url('/Public/Images/foundation/orbit/timer-black.png?1351086102') repeat 0 0;
 }
 
 /* line 82, ../../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/modules/_orbit.scss */
@@ -3361,14 +3361,14 @@ div.orbit-wrapper span.pause {
   position: absolute;
   top: 0;
   left: 0;
-  background: url('/Public/Images/foundation/orbit/pause-black.png?1348685020') no-repeat;
+  background: url('/Public/Images/foundation/orbit/pause-black.png?1351086102') no-repeat;
   z-index: 4;
   opacity: 0;
 }
 
 /* line 93, ../../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper span.pause.active {
-  background: url('/Public/Images/foundation/orbit/pause-black.png?1348685020') no-repeat 0 -40px;
+  background: url('/Public/Images/foundation/orbit/pause-black.png?1351086102') no-repeat 0 -40px;
 }
 
 /* line 97, ../../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/modules/_orbit.scss */
@@ -3420,25 +3420,25 @@ div.orbit-wrapper div.slider-nav span {
 
 /* line 134, ../../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper div.slider-nav span.right {
-  background: url('/Public/Images/foundation/orbit/right-arrow.png?1348685020');
+  background: url('/Public/Images/foundation/orbit/right-arrow.png?1351086102');
   background-size: 100%;
   right: 0;
 }
 
 /* line 139, ../../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper div.slider-nav span.left {
-  background: url('/Public/Images/foundation/orbit/left-arrow.png?1348685020');
+  background: url('/Public/Images/foundation/orbit/left-arrow.png?1351086102');
   background-size: 100%;
   left: 0;
 }
 
 /* line 145, ../../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/modules/_orbit.scss */
 .lt-ie9 div.orbit-wrapper div.slider-nav span.right {
-  background: url('/Public/Images/foundation/orbit/right-arrow-small.png?1348685020');
+  background: url('/Public/Images/foundation/orbit/right-arrow-small.png?1351086102');
 }
 /* line 146, ../../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/modules/_orbit.scss */
 .lt-ie9 div.orbit-wrapper div.slider-nav span.left {
-  background: url('/Public/Images/foundation/orbit/left-arrow-small.png?1348685020');
+  background: url('/Public/Images/foundation/orbit/left-arrow-small.png?1351086102');
 }
 
 /* Bullet Nav ---------------------- */
@@ -3460,7 +3460,7 @@ ul.orbit-bullets li {
   cursor: pointer;
   color: #999;
   text-indent: -9999px;
-  background: url('/Public/Images/foundation/orbit/bullets.jpg?1348685020') no-repeat 4px 0;
+  background: url('/Public/Images/foundation/orbit/bullets.jpg?1351086102') no-repeat 4px 0;
   width: 13px;
   height: 12px;
   overflow: hidden;
@@ -3517,7 +3517,7 @@ ul.orbit-bullets li {
   cursor: pointer;
   color: #999;
   text-indent: -9999px;
-  background: url('/Public/Images/foundation/orbit/bullets.jpg?1348685020') no-repeat 4px 0;
+  background: url('/Public/Images/foundation/orbit/bullets.jpg?1351086102') no-repeat 4px 0;
   width: 13px;
   height: 12px;
   overflow: hidden;
@@ -5036,55 +5036,68 @@ h3 {
   color: #e5352c;
 }
 
-/* line 61, ../../Private/Stylesheets/Main.scss */
-#navigation-main-full a {
+/* line 62, ../../Private/Stylesheets/Main.scss */
+#navigation-main-full a.normal, #navigation-main-full a.current {
   display: block;
   font-size: 28px;
   font-size: 2.8rem;
 }
-/* line 65, ../../Private/Stylesheets/Main.scss */
-#navigation-main-full a h1 {
+/* line 66, ../../Private/Stylesheets/Main.scss */
+#navigation-main-full a.normal h1, #navigation-main-full a.current h1 {
   margin-bottom: 0;
 }
-
 /* line 71, ../../Private/Stylesheets/Main.scss */
+#navigation-main-full .languageswitch {
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin-top: 16px;
+}
+
+/* line 77, ../../Private/Stylesheets/Main.scss */
 #navigation-main-small {
   padding: 20px 0 30px 0;
 }
-/* line 74, ../../Private/Stylesheets/Main.scss */
-#navigation-main-small a {
+/* line 80, ../../Private/Stylesheets/Main.scss */
+#navigation-main-small a.normal, #navigation-main-small a.current {
   display: inline;
   font-size: 18px;
   font-size: 1.8rem;
   margin: 0 5px 0 0;
 }
-/* line 79, ../../Private/Stylesheets/Main.scss */
-#navigation-main-small a h1 {
+/* line 85, ../../Private/Stylesheets/Main.scss */
+#navigation-main-small a.normal h1, #navigation-main-small a.current h1 {
   display: inline;
   font-size: 24px;
   font-size: 2.4rem;
   margin: 0;
 }
+/* line 92, ../../Private/Stylesheets/Main.scss */
+#navigation-main-small .languageswitch {
+  display: inline;
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin-top: 16px;
+}
 
-/* line 88, ../../Private/Stylesheets/Main.scss */
+/* line 100, ../../Private/Stylesheets/Main.scss */
 .robertlemke-plugin-blog .read-more {
   color: #e5352c;
   font-weight: bold;
 }
-/* line 94, ../../Private/Stylesheets/Main.scss */
+/* line 106, ../../Private/Stylesheets/Main.scss */
 .robertlemke-plugin-blog .typo3-widget-paginator li a {
   color: #222222;
 }
-/* line 97, ../../Private/Stylesheets/Main.scss */
+/* line 109, ../../Private/Stylesheets/Main.scss */
 .robertlemke-plugin-blog .typo3-widget-paginator li.current, .robertlemke-plugin-blog .typo3-widget-paginator li a:hover {
   color: #e5352c;
 }
 
-/* line 104, ../../Private/Stylesheets/Main.scss */
+/* line 116, ../../Private/Stylesheets/Main.scss */
 .typo3-image.typo3-image-position-left {
   float: left;
 }
-/* line 107, ../../Private/Stylesheets/Main.scss */
+/* line 119, ../../Private/Stylesheets/Main.scss */
 .typo3-image.typo3-image-position-right {
   float: right;
 }

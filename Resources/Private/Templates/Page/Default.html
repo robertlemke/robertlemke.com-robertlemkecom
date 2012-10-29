@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--{namespace typo3=TYPO3\TYPO3\ViewHelpers}{namespace ts=TYPO3\TypoScript\ViewHelpers}-->
+<!--{namespace typo3=TYPO3\TYPO3\ViewHelpers}{namespace ts=TYPO3\TypoScript\ViewHelpers}{namespace rl=RobertLemke\RobertLemkeCom\ViewHelpers}-->
 <!--[if lt IE 7]>
 <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>
@@ -56,9 +56,11 @@
 				<header class="three columns main-navigation t3-reloadable-content" id="navigation-main">
 					<nav class="show-for-small" id="navigation-main-small">
 						<ts:renderTypoScript path="parts/firstLevelMenu"></ts:renderTypoScript>
+						<rl:languageSwitch format="short"/>
 					</nav>
 					<nav class="hide-for-small" id="navigation-main-full">
 						<ts:renderTypoScript path="parts/firstLevelMenu"></ts:renderTypoScript>
+						<rl:languageSwitch format="full"/>
 					</nav>
 				</header>
 				<section class="seven columns t3-reloadable-content" id="mainsection">
