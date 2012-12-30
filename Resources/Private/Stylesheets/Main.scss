@@ -45,7 +45,7 @@ h3 {
 		color: $txtColor;
 	}
 
-	nav a:hover, nav a.active {
+	nav a:hover, nav a.active, nav a.current {
 		color: $red;
 	}
 

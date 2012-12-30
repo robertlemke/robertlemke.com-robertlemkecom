@@ -5024,7 +5024,7 @@ h3 {
   color: #222222;
 }
 /* line 48, ../../Private/Stylesheets/Main.scss */
-#navigation-main nav a:hover, #navigation-main nav a.active {
+#navigation-main nav a:hover, #navigation-main nav a.active, #navigation-main nav a.current {
   color: #e5352c;
 }
 /* line 52, ../../Private/Stylesheets/Main.scss */

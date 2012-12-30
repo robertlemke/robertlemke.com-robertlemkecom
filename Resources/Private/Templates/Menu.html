@@ -1,4 +1,4 @@
-{namespace typo3=TYPO3\TYPO3\ViewHelpers}
+{namespace neos=TYPO3\Neos\ViewHelpers}
 {namespace rl=RobertLemke\RobertLemkeCom\ViewHelpers}
 <f:render section="itemList" arguments="{items: items}" />
 
@@ -6,11 +6,11 @@
 	<f:for each="{items}" as="item" iteration="iterator">
 		<f:if condition="{iterator.isFirst}">
 			<f:then>
-				<typo3:link.node node="{item.node}" class="logotype"><h1>robert&nbsp;lemke<span class="underscore">_</span></h1></typo3:link.node><br class="show-for-small"/>
+				<neos:link.node node="{item.node}" class="logotype"><h1>robert&nbsp;lemke<span class="underscore">_</span></h1></neos:link.node><br class="show-for-small"/>
 				<f:link.action action="index" controller="Post" package="RobertLemke.Plugin.Blog" class="normal">blog</f:link.action>
 			</f:then>
 			<f:else>
-				<typo3:link.node node="{item.node}" class="{item.state}"><rl:format.case case="lower">{item.label}</rl:format.case></typo3:link.node>
+				<neos:link.node node="{item.node}" class="{item.state}"><rl:format.case case="lower">{item.label}</rl:format.case></neos:link.node>
 			</f:else>
 		</f:if>
 	</f:for>

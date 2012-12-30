@@ -7,26 +7,26 @@
 			<siteResourcesPackageKey>RobertLemke.RobertLemkeCom</siteResourcesPackageKey>
 		</properties>
 		<node identifier="0b6e2073-df1d-40d0-90a0-07aed00cd64f"
-				type="TYPO3.Phoenix.ContentTypes:Page" nodeName="home" locale="">
+				type="TYPO3.Neos.ContentTypes:Page" nodeName="home" locale="">
 			<properties>
 				<title>Home</title>
 			</properties>
 			<node identifier="bba55cf2-27a7-41e0-a73d-b5ee3d666bfb"
-					type="TYPO3.Phoenix.ContentTypes:Section" nodeName="main" locale="">
+					type="TYPO3.Neos.ContentTypes:Section" nodeName="main" locale="">
 				<node identifier="a7350081-ebf9-4b22-81ef-f95f43295a90"
-						type="TYPO3.Phoenix.ContentTypes:Headline"
+						type="TYPO3.Neos.ContentTypes:Headline"
 						nodeName="node50643e441c3bf" locale="">
 					<properties>
 						<title><![CDATA[<h1>A New Site with a New CMS</h1>]]></title>
 					</properties>
 				</node>
 				<node identifier="8a98daad-29d3-49d9-a2a3-f9c9d7ad9684"
-						type="TYPO3.Phoenix.ContentTypes:Text"
+						type="TYPO3.Neos.ContentTypes:Text"
 						nodeName="node50643f1a6bdd2" locale="">
 					<properties>
 						<text><![CDATA[<p><p>You caught me! I'm in midst of trying out the
 							fruits of the last six year's of work – the new content
-							management system code-named "TYPO3 Phoenix". And why not
+							management system code-named "TYPO3 Neos". And why not
 							deploy a pre-release version with only a rough implementation
 							of my new design on the website already?</p><p>I will refine
 							the design, markup and plugins gradually. Until then, watch
@@ -39,36 +39,36 @@
 			</node>
 		</node>
 		<node identifier="547949c4-3fa2-4a65-934d-6c58cbeeef27"
-				type="TYPO3.Phoenix.ContentTypes:Page" nodeName="coach" locale="">
+				type="TYPO3.Neos.ContentTypes:Page" nodeName="coach" locale="">
 			<properties>
 				<title>Coach</title>
 			</properties>
 		</node>
 		<node identifier="df1e7658-20cb-404b-b18d-225916b1cf1e"
-				type="TYPO3.Phoenix.ContentTypes:Shortcut" nodeName="blog" locale="">
+				type="TYPO3.Neos.ContentTypes:Shortcut" nodeName="blog" locale="">
 			<properties>
 				<title>Blog</title>
 			</properties>
 			<node identifier=""
-					type="TYPO3.Phoenix.ContentTypes:Page" nodeName="posts" locale="">
+					type="TYPO3.Neos.ContentTypes:Page" nodeName="posts" locale="">
 				<properties>
 					<title>Posts</title>
 				</properties>
 			</node>
 		</node>
 		<node identifier="3ca17e57-37ee-43a5-b49f-aa746f5c5edb"
-				type="TYPO3.Phoenix.ContentTypes:Page" nodeName="about" locale="">
+				type="TYPO3.Neos.ContentTypes:Page" nodeName="about" locale="">
 			<properties>
 				<title>About</title>
 			</properties>
 		</node>
 		<node identifier="247b2b6c-138a-4c3f-ab6c-780fbc0c7e56"
-				type="TYPO3.Phoenix.ContentTypes:Page" nodeName="contact" locale="">
+				type="TYPO3.Neos.ContentTypes:Page" nodeName="contact" locale="">
 			<properties>
 				<title>Contact</title>
 			</properties>
 			<node identifier="ec1f7c1a-ee0b-4f0c-924c-9ae465829982"
-					type="TYPO3.Phoenix.ContentTypes:Section" nodeName="main" locale=""/>
+					type="TYPO3.Neos.ContentTypes:Section" nodeName="main" locale=""/>
 		</node>
 	</site>
 </root>

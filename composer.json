@@ -4,7 +4,7 @@
 	"description":"",
 	"version":"1.0.0",
 	"require":{
-		"typo3/phoenix":"*",
+		"typo3/neos":"*",
 		"robertlemke/plugin-blog":"*"
 	},
 	"autoload":{
