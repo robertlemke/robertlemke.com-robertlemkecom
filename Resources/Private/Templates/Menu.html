@@ -7,7 +7,6 @@
 		<f:if condition="{iterator.isFirst}">
 			<f:then>
 				<neos:link.node node="{item.node}" class="logotype"><h1>robert&nbsp;lemke<span class="underscore">_</span></h1></neos:link.node><br class="show-for-small"/>
-				<f:link.action action="index" controller="Post" package="RobertLemke.Plugin.Blog" class="normal">blog</f:link.action>
 			</f:then>
 			<f:else>
 				<neos:link.node node="{item.node}" class="{item.state}"><rl:format.case case="lower">{item.label}</rl:format.case></neos:link.node>
