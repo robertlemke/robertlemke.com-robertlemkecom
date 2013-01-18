@@ -38,6 +38,10 @@ h3, h3 div {
 	margin-top: 0;
 }
 
+blockquote {
+	padding-top: 0;
+}
+
 #navigation-main {
 	font-family: "house", sans-serif;
 
@@ -97,6 +101,7 @@ h3, h3 div {
 }
 
 .robertlemke-plugin-blog {
+
 	.read-more {
 		color: $red;
 	}
@@ -108,6 +113,11 @@ h3, h3 div {
 		li.current, li a:hover{
 			color: $red;
 		}
+	}
+
+	li.comment p.metadata {
+		font-family: "House",Helvetica,Arial,sans-serif;
+		font-size: 15px;
 	}
 }
 
