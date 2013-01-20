@@ -21,6 +21,14 @@ page.body {
 }
 
 page.headerData {
+	meta = Template
+	meta {
+		templatePath = 'resource://RobertLemke.RobertLemkeCom/Private/Templates/Page/Default.html'
+		sectionName = 'meta'
+
+		title = ${q(node).property('title')}
+	}
+
 	stylesheets = Template
 	stylesheets {
 		templatePath = 'resource://RobertLemke.RobertLemkeCom/Private/Templates/Page/Default.html'
