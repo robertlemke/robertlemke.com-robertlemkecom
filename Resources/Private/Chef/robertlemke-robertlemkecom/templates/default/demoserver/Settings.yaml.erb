@@ -1,0 +1,28 @@
+TYPO3:
+  Flow:
+    persistence:
+      backendOptions:
+        # TODO Use attr
+        dbname: ssodemoserver
+        host: <%= node['mysql']['bind_address'] %>
+        # TODO Use attr
+        user: root
+        password: <%= node['mysql']['server_root_password'] %>
+
+  SingleSignOn:
+    Server:
+      server:
+        # TODO Use attr
+        serviceBaseUri: 'http://ssodemoserver.vagrant/sso/'
+        keyPairUuid: ''
+Acme:
+  DemoServer:
+    # TODO Use attr
+    demoInstanceUri: 'http://ssodemoinstance.vagrant/'
+    clients:
+      -
+        # TODO Use attr
+        serviceBaseUri: 'http://ssodemoinstance.vagrant/sso/'
+      -
+        # TODO Use attr
+        serviceBaseUri: 'http://ssodemoinstance2.vagrant/sso/'
