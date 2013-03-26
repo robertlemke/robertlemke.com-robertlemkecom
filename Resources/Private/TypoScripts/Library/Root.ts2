@@ -1,4 +1,4 @@
-include: resource://RobertLemke.Plugin.Blog/Private/TypoScripts/Library/ContentTypes.ts2
+include: resource://RobertLemke.Plugin.Blog/Private/TypoScripts/Library/NodeTypes.ts2
 
 page = Page
 page.body {
