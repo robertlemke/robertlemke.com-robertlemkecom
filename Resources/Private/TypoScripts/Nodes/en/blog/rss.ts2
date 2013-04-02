@@ -1,0 +1,2 @@
+page = RobertLemke.Plugin.Blog:PostPlugin
+page.action = "rss"
