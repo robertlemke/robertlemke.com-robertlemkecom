@@ -11,6 +11,7 @@
 	<head>
 		<f:section name="meta">
 			<title>{title} » Robert Lemke » Coaching, Coding, Consultancy for TYPO3 Flow and TYPO3 Neos</title>
+			<link href="http://feed.robertlemke.com/robertlemke" rel="alternate" type="application/rss+xml" title="robertlemke.com blog rss feed" />
 		</f:section>
 		<f:section name="stylesheets">
 			<meta name="viewport" content="width=device-width"/>
@@ -69,6 +70,9 @@
 					<nav class="hide-for-small" id="navigation-main-full">
 						<ts:renderTypoScript path="parts/firstLevelMenu"></ts:renderTypoScript>
 						<rl:languageSwitch format="full"/>
+						<div class="rss-feed" style="margin-top: 16px">
+							<a href="http://feed.robertlemke.com/robertlemke">rss feed</a>
+						</div>
 					</nav>
 				</header>
 				<section class="seven columns t3-reloadable-content" id="mainsection">
