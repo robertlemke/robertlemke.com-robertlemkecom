@@ -5118,3 +5118,12 @@ blockquote {
   padding: 4px 10px;
   background-color: #eee;
 }
+
+div.typo3-image img {
+ margin-bottom: 10px;
+}
+
+div.byline {
+	font-family: "House",Helvetica,Arial,sans-serif;
+	font-size: 15px;
+}
